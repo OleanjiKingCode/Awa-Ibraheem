@@ -4,7 +4,7 @@ const sliders2 = document.querySelector(".slide2-in");
 
 const appearOptions = {
     threshold: 0,
-    rootMargin: "50px"
+    rootMargin: "20px"
   };
   
   const appearOnScroll = new IntersectionObserver(function(
