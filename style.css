@@ -853,15 +853,15 @@ body{
 
 .from-left.appear {
     opacity: 1;
-  animation: slidingRight 1.4s ease-in;
+  animation: slidingRight .7s ease-in;
 }
 .from-left2.appear {
     opacity: 1;
-  animation: slidingRight2 1.4s ease-in;
+  animation: slidingRight2 .7s ease-in;
 }
 .from-right.appear {
     opacity: 1;
-    animation: sliding 1.4s ease-in;
+    animation: sliding .7s ease-in;
 }
 @keyframes sliding {
     0%{
