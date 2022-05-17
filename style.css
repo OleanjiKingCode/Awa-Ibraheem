@@ -1388,7 +1388,9 @@ body{
         display: unset;
         margin-left: -100px;
     }
-    
+    .navbar-toggler{
+        display: none;
+    }
     .owl-carousel .item .imager{
         left:20%;
         transform: translateY(0px);
