@@ -1428,6 +1428,7 @@ body{
         /* right: -30px; */
         top:20px;
         padding: 10px;
+        margin-bottom: 40px;
     }
     .Story{
         display: none;
