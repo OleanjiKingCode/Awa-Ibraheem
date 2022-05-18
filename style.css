@@ -1218,7 +1218,7 @@ body{
     .owl-carousel .item .imager {
     
        
-        left:20%;
+        /* left:20%; */
        
         transform: translateY(-5px);
     }
@@ -1246,14 +1246,7 @@ body{
         font-size: 13px;
         /* margin-bottom: 20px; */
       }
-      .owl-carousel .item .imager {
     
-       
-        
-        height: 280;
-       
-        transform: translateY(-5px);
-    }
 
 
 
@@ -1392,7 +1385,7 @@ body{
         display: none;
     }
     .owl-carousel .item .imager{
-        left:20%;
+        /* left:20%; */
         transform: translateY(0px);
     }
     .owl-carousel .item .infor {
@@ -1522,9 +1515,9 @@ body{
     
        
         
-        height: 300;
+    
         background-size: cover;
-        transform: translate(-30px,-5px);
+        transform: translate(-67px,-5px);
     }
 
     .owl-carousel .item .infor {
