@@ -170,13 +170,13 @@ body{
     
 }
 .secondpic{
-    width:320px ;
+    width:312px ;
     height: 314px;
     position: absolute;
     z-index: 999;
     opacity: 0;
    
-    transform:translate(127px,197px);
+    transform:translate(129px,200px);
     animation: changing2 10s ease 20s  infinite alternate;
     
 }
@@ -186,7 +186,7 @@ body{
     position: absolute;
     z-index: 997;
     transform:translate(120px,190px);
- 
+    display: unset;
     animation: rotation 10s 20s infinite alternate;
 }
 
@@ -238,19 +238,32 @@ body{
 @keyframes rotation {
 
     0%{
+        
+        opacity: 1;
       transform:translate(120px,190px) rotate(0deg);
     }
     49%{
+       
+        opacity: 1;
         transform:translate(120px,190px) rotate(0deg);
     }
     50%{
-
+        opacity: 0.1;
     }
     51%{
         transform:translate(120px,190px) rotate(250deg);
+       opacity: 0;
+        
+       
+       
+        
     }
     100%{
         transform:translate(120px,190px) rotate(250deg);
+        opacity: 0
+       
+       
+       
     }
   }
 
@@ -778,14 +791,27 @@ body{
     border-radius: 10px;
   }
 .back-face p{
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+  .back-face .yo{
     margin-top: 20px;
     text-align: justify;
-    font-size: 14px;
-    /* margin-bottom: 20px; */
+    font-size: 15px;
+    margin-bottom: 20px;
   }
-.button{
-
+  .back-face .dow{
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+  .inner .back-face .button{
+  
     padding: 10px 20px;
+   
     background-color: rgba(255, 68, 0, 0.75);
     color: white;
     font-size: 17px;
@@ -793,13 +819,17 @@ body{
     border-radius: 10px;
     text-decoration: none;
     
-  
-   
     
+    
+}
+.inner .back-face a{
+  
 }
 .inner:hover .back-face .button{
     text-decoration: none;
     transition: all .4s ease-in;
+    margin-bottom: 20000px;
+   
    
 
 }
@@ -1051,12 +1081,22 @@ body{
 .owl-carousel .item .imager {
     
     position: absolute;
-    left:25%;
+    left:22%;
     width: auto;
     height: 384px;
     transform: translateY(20px);
 }
-
+.owl-carousel .item .imagers {
+    
+    position: absolute;
+    left:22%;
+    width: auto;
+    height: 384px;
+    transform: translateY(20px);
+}
+.owl-carousel .item .anoda{
+    transform: translateY(10px);
+}
 .owl-carousel .item img{
     top: inherit;
     /* position: absolute; */
@@ -1218,15 +1258,24 @@ body{
     .owl-carousel .item .imager {
     
        
-        /* left:20%; */
+       height: 340px;
        
-        transform: translateY(-5px);
+        transform: translate(-10px,-5px);
     }
-
+    .owl-carousel .item .imagers {
+    
+       
+       height: 340px;
+       
+        transform: translate(-10px,-5px);
+    }
+    .owl-carousel .item .anoda{
+        transform: translateY(15px);
+    }
     .owl-carousel .item .infor {
         position: absolute;
-        top: 380px;
-        padding: 10px;
+        top: 340px;
+        padding: 1px;
         text-align: center;
         left:10%;
         display: flex;
@@ -1241,14 +1290,25 @@ body{
        transform: translateY(-30px);
       }
     .back-face p{
-        margin-top: 15px;
+        /* margin-top: 10px; */
         text-align: justify;
-        font-size: 13px;
+        font-size: 15px;
         /* margin-bottom: 20px; */
       }
     
 
-
+      .back-face .yo{
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      .back-face .dow{
+        margin-top: 40px;
+        text-align: justify;
+        font-size: 15px;
+        margin-bottom: 50px;
+      }
 
     
 .firstpic{
@@ -1261,7 +1321,7 @@ body{
     
 }
 .secondpic{
-    width:224px ;
+    width:219px ;
     height: 220px;
     position: absolute;
     z-index: 999;
@@ -1329,19 +1389,29 @@ body{
 @keyframes rotation {
 
     0%{
+       
+       opacity: 1;
       transform:translate(40px,225px) rotate(0deg);
     }
     49%{
+       opacity: 1;
         transform:translate(40px,225px) rotate(0deg);
     }
     50%{
-
+        opacity: 0.1;
     }
     51%{
+       
         transform:translate(40px,225px) rotate(250deg);
+        opacity: 0;
+       
     }
     100%{
+       
         transform:translate(40px,225px) rotate(250deg);
+        opacity: 0;
+       
+       
     }
   }
 
@@ -1384,10 +1454,8 @@ body{
     .navbar-toggler{
         display: none;
     }
-    .owl-carousel .item .imager{
-        /* left:20%; */
-        transform: translateY(0px);
-    }
+  
+   
     .owl-carousel .item .infor {
         position: absolute;
         transform: translateY(400px);
@@ -1512,14 +1580,17 @@ body{
     }
 
     .owl-carousel .item .imager {
-    
-       
-        
-    
-        background-size: cover;
-        transform: translate(-67px,-5px);
-    }
 
+        background-size: cover;
+        transform: translate(-30px,-5px);
+    }
+    .owl-carousel .item .imagers {
+        background-size: cover;
+        transform: translate(-14px,-5px);
+    }
+    .owl-carousel .item .anoda{
+        transform: translateY(15px);
+    }
     .owl-carousel .item .infor {
         position: absolute;
         top: 20px;
@@ -1591,7 +1662,7 @@ body{
         
     }
     .secondpic{
-        width:224px ;
+        width:219px ;
         height: 220px;
         position: absolute;
         z-index: 999;
@@ -1657,20 +1728,46 @@ body{
     @keyframes rotation {
     
         0%{
+            opacity: 1;
            transform:translate(30px,250px) rotate(0deg);
         }
         49%{
+            opacity: 1;
              transform:translate(30px,250px) rotate(0deg);
         }
         50%{
-    
+            opacity: 0.1;
         }
         51%{
+            opacity: 0;
              transform:translate(30px,250px) rotate(250deg);
         }
         100%{
+            opacity: 0;
              transform:translate(30px,250px) rotate(250deg);
         }
       }
+
+      .back-face p{
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 19px;
+        /* margin-bottom: 20px; */
+      }
+    
+
+      .back-face .yo{
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      .back-face .dow{
+        margin-top: 40px;
+        text-align: justify;
+        font-size: 15px;
+        margin-bottom: 50px;
+      }
+
     
 }

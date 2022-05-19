@@ -1,3 +1,4 @@
+document.getElementById("year").innerHTML = new Date().getFullYear();
 const sliders = document.querySelectorAll(".slide-in");
 const sliders2 = document.querySelector(".slide2-in");
 
