@@ -57,9 +57,19 @@ body{
     background-color: rgb(4, 59, 4);
     /* background-color: rgb(4, 59, 4); */
     /* background-image: linear-gradient(-90deg ,rgba(255, 68, 0, 0.877), rgb(4, 59, 4)); */
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease;
 }
-
+.navbar .navbar-brand{
+    display: none;
+}
+.navbar.show{
+  
+    position: fixed;
+    transition: all .3s ease; 
+}
+.navbar.show .navbar-brand{
+    display: unset;
+}
 .navbar-nav {
     text-align: right;
     margin-right:20px;
@@ -388,305 +398,6 @@ body{
     height: 1px;
 }
 
-/* .associations .boxes .Px1{
-    border: 3px solid black;
-    
-    height: 320px;
-    width: 451px;
-    background-color: white;
-   
-}
-.associations .boxes .Px2{
-    border: 3px solid black;
-    height: 320px;
-    width: 221px;
-    background-color: white;
-   
-    
-}
-.associations .boxes .Px3{
-    border: 3px solid black;
-    height: 320px;
-    width: 221px;
-    background-color:white;
-}
-.associations .boxes .Px4{
-    border: 3px solid black;
-   
-    height: 470px;
-    width: 453px;
-    background-color: white;
-    
-}
-.associations .boxes .Px5{
-    border: 3px solid black;
-    height: 320px;
-    width: 221px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top:inherit;
-    z-index: 999;
-    transform: translateY(320px);
-}
-.associations .boxes .Px6{
-    border: 3px solid black;
-    height: 320px;
-    width: 221px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top:inherit;
-    z-index: 999;
-    transform: translate(221px,320px);
-}
-.associations .boxes .Px7{
-    border: 3px solid black;
-
-    height: 320px;
-    width: 451px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top:inherit;
-    z-index: 999;
-    transform: translate(442px,320px);
-}
-.associations .boxes .Px8{
-    border: 3px solid black;
-    height: 170px;
-    width: 453px; 
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top:inherit;
-    z-index: 996;
-    transform: translate(893px,470px);
-
-}
-
-
-.associations .boxes .Px1 .overlay,
-.associations .boxes .Px7 .overlay
-{
-    position: absolute;
-    top: inherit;
-    height: 90px;
-    width: inherit;
-    background-color: rgba(3, 102, 8, 0.75);
-    transition: all 0.3s ease;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.associations .boxes .Px1 .left,
-.associations .boxes .Px7 .left{
-    height: 0px;
-    left: inherit;
-  
-    bottom:inherit;
-    width: inherit;
-}
-.associations .boxes .Px4 .left,
-.associations .boxes .Px8 .left{
-    height: 0;
-    left: inherit;
-    bottom:inherit;
-    width: 440px;
-}
-.associations .boxes .Px1:hover .left,
-.associations .boxes .Px4:hover .left,
-.associations .boxes .Px8:hover .left,
-.associations .boxes .Px7:hover .left{
-    height: 90px;
-    opacity: 1;
-}
-
-
-.associations .boxes .Px2 .overlay,
-.associations .boxes .Px3 .overlay,
-.associations .boxes .Px5 .overlay,
-.associations .boxes .Px6 .overlay {
-    position: absolute;
-    top: inherit;
-    height: 70px;
-    width: inherit;
-  
-    background-color: rgba(3, 102, 8, 0.75);
-    transition: all 0.3s ease;
-   
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.associations .boxes .Px2 .left,
-.associations .boxes .Px3 .left,
-.associations .boxes .Px5 .left,
-.associations .boxes .Px6 .left{
-   
-    height: 0px;
-    left: inherit;
-  
-    bottom:inherit;
-    width: inherit;
-}
-.associations .boxes .Px2:hover .left
-,.associations .boxes .Px3:hover .left,
-.associations .boxes .Px5:hover .left,
-.associations .boxes .Px6:hover .left{
-   
-    height: 70px;
-    opacity: 1;
-}
-
-
-.associations .boxes .Px4 .overlay
-{
-    position: absolute;
-    
-   top: inherit;
-    height: 140px;
-    width: 447px;
-    background-color: rgba(3, 102, 8, 0.75);
-    transition: all 0.3s ease;
-   
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-.associations .boxes .Px8 .overlay
-{
-    position: absolute;
-  
-   top: inherit;
-    height: 30px;
-    width: 447px;
-    background-color: rgba(3, 102, 8, 0.75);
-    transition: all 0.3s ease;
-   
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.associations .boxes .button{
-
-    padding: 10px 20px;
-    background-color: rgba(255, 68, 0, 0.75);
-    color: white;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.associations .boxes .fa {
-    color: rgba(255, 68, 0, 0.75);
-    font-size: 38px;
-}
-
-.associations .boxes .Px8 img{
-    
-    position: absolute;
-    
-    padding: 0px 40px;
-    transform: translate(50px ,28px);
-    
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-    
-}
-.associations .boxes .Px4 img{
-    
-    position: absolute;
-    padding: 0px 60px;
-    transform: translate(30px ,170px);
-    
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-    
-}
-
-.associations .boxes .Px2 img{
-    
-    position: absolute;
-    padding: 0px 10px;
-    transform: translate(-10px ,90px);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-.associations .boxes .Px3 img{
-    
-    position: absolute;
-    padding: 0px 10px;
-    transform: translate(0px ,50px);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-.associations .boxes .Px1 img{
-    
-    position: absolute;
-    padding: 0px 10px;
-    transform: translate(15px ,120px);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-.associations .boxes .Px7 img{
-    
-    position: absolute;
-    padding: 0px 10px;
-    transform: translate(120px ,120px);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-.associations .boxes .Px5 img,
-.associations .boxes .Px6 img
-{
-    
-    position: absolute;
-    padding: 0px 10px;
-    transform: translate(15px ,90px);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-}
-.associations .boxes .Px6 h2{
-    position: absolute; 
-   
-    color: black;
-    font-weight: 700;
-    transform: translate(85px ,180px);
-} */
-
-/* .associations .boxes {
-    align-items: center;
-} */
 
 .associations .boxes {
     margin-top: 20px;
@@ -789,7 +500,7 @@ body{
     box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
     transition: all 0.5s ease; 
     border-radius: 10px;
-  }
+}
 .back-face p{
     margin-top: 40px;
     text-align: justify;
