@@ -629,7 +629,9 @@
   align-items: center;
   justify-content: center;
   width: inherit;
-  padding: 0px 15px;
+  margin: 0px 15px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .News .cards .newsCard .InnerCard .imgPadd img {
   width: inherit;
@@ -638,7 +640,8 @@
   /* display: none; */
 }
 .News .cards .newsCard .imgPadd img:hover {
-  /* transform: ; */
+  scale: 1.15;
+  transition: all 0.1s ease-in-out;
 }
 .News .cards .newsCard .InnerCard span {
   font-size: 20px;
