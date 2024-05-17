@@ -7,7 +7,40 @@
   color: white;
   font-family: "Open Sans", sans-serif;
 }
+.scroll-down {
+  font-size: 15px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  /* gap: 3px; */
+  visibility: visible;
+  /* padding: 10px; */
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-align: center;
+  opacity: 1;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  background-color: orangered;
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+}
 
+.scroll-down:hover{
+  background-color: rgb(255, 100, 43);
+}
 .scroll-top {
   font-size: 25px;
   line-height: 60px;
@@ -42,6 +75,13 @@
   bottom: 30px;
   visibility: visible;
   opacity: 1;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
+}
+
+.scroll-down.show {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.03);
 }
 
@@ -548,7 +588,6 @@
 }
 
 .News {
-  box-shadow: 0px 5px 20px 0px rgba(31, 40, 59, 0.1);
   height: 840px;
 }
 .News .dot {
@@ -612,14 +651,14 @@
   padding: 0px 20px;
 }
 .News .cards .newsCard .InnerCard {
-  padding: 10px;
+  padding: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: white;
   box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
-  border-radius: 10px;
+  border-radius: 15px;
   width: inherit;
   height: inherit;
 }
@@ -662,16 +701,15 @@
   text-decoration: none;
   font-weight: 600;
   background-color: rgba(3, 102, 8, 0.75);
-  color: rgb(0, 0, 0);
+  color: white;
   padding: 5px 40px;
   text-align: center;
+  border-radius: 5px;
   align-self: flex-end;
-
-  border-bottom-right-radius: 10px;
 }
 .News .cards .newsCard .InnerCard a:hover {
   background-color: orangered;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .partners {
@@ -842,7 +880,7 @@
 
 .footer {
   height: 60px;
-  background-color: rgb(10, 15, 34);
+  background-color: rgb(54, 54, 54);
   display: flex;
   align-items: flex-end;
   justify-content: center;

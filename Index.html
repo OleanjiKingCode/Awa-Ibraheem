@@ -95,6 +95,10 @@
       alt="AWA IBAHEEM'S PICTURE"
     />
     <img class="Phone" src="./images/phone.png" alt="AWA IBAHEEM'S PICTURE" />
+    <div class="scroll-down" id="scroll-down" title="scroll down">
+      <!-- <span>scroll down</span> -->
+      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
     <div class="scroll-top" id="scroll-top">
       <i class="fa fa-globe"></i>
     </div>
@@ -375,7 +379,8 @@
           </div>
         </div>
       </section>
-      <section class="News" id="News">
+
+      <!-- <section class="News" id="News">
         <div class="container-fluid ass">
           <div class="header">
             <div class="top">
@@ -393,8 +398,7 @@
             </div>
           </div>
           <div class="row cards">
-
-            <div class="col-md-4 newsCard">
+            <div class="col-md-3 newsCard">
               <div class="InnerCard">
                 <div class="imgPadd">
                   <img src="/images/nw.jpg" alt="" />
@@ -412,7 +416,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 newsCard">
+            <div class="col-md-3 newsCard">
               <div class="InnerCard">
                 <div class="imgPadd">
                   <img src="/images/nw.jpg" alt="" />
@@ -430,8 +434,25 @@
               </div>
             </div>
 
-            
-            <div class="col-md-4 newsCard">
+            <div class="col-md-3 newsCard">
+              <div class="InnerCard">
+                <div class="imgPadd">
+                  <img src="/images/nw.jpg" alt="" />
+                </div>
+                <div class="area">
+                  <span> TITLE OF PUBLICATION</span>
+                  <div>
+                    Body of the publication lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Saepe perspiciatis ullam atque
+                    aperiam veritatis? Corporis cum soluta id debitis error....
+                  </div>
+                </div>
+
+                <a href="#">More</a>
+              </div>
+            </div>
+
+            <div class="col-md-3 newsCard">
               <div class="InnerCard">
                 <div class="imgPadd">
                   <img src="/images/nw.jpg" alt="" />
@@ -450,7 +471,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
 
     <section class="partners" id="partners">
@@ -648,7 +669,13 @@
     <script src="confetti.js"></script>
     <script type="text/javascript">
       $(window).scroll(function () {
-        if (this.scrollY > 60) {
+        if (this.scrollY > 40) {
+          $(".scroll-down").addClass("show");
+        } else {
+          $(".scroll-down").removeClass("show");
+        }
+
+        if (this.scrollY > 110) {
           $(".scroll-top").addClass("show");
         } else {
           $(".scroll-top").removeClass("show");
@@ -659,10 +686,17 @@
           $(".navbar").removeClass("show");
         }
       });
+
       $(".scroll-top").on("click", function (evt) {
         $("html, body").animate({ scrollTop: 0 }, 600);
         evt.preventDefault();
       });
+
+      $(".scroll-down").on("click", function (evt) {
+        $("html, body").animate({ scrollTop: 400 }, 600);
+        evt.preventDefault();
+      });
+
       function myFunction() {
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
@@ -713,7 +747,6 @@
         const log = day + "/" + month;
 
         if (log == "19/10") {
-          console.log(log);
           start();
           stop();
         }
