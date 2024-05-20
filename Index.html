@@ -15,6 +15,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/Gelion-Regular.woff2" />
 
     <link
       rel="stylesheet"
@@ -123,9 +124,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#associations">Associates</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#News">News & Publications</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="#partners">Gallery</a>
           </li>
@@ -505,7 +506,7 @@
               <div class="col-md-6">
                 <img class="imager" src="./images/Oluwo.png" alt="Office" />
                 <div class="infor">
-                  <p>* The Oluwo of Iwo at Alhaji AWA Ibraheem's Office. *</p>
+                  <p>The Oluwo of Iwo at Alhaji AWA Ibraheem's Office.</p>
                 </div>
               </div>
               <div class="col-md-3"></div>
@@ -517,7 +518,7 @@
               <div class="col-md-6">
                 <img class="ww" src="./images/ican (2).jpg" alt="" />
                 <div class="info">
-                  <p class="ww">* At the Commissioning of ICAN Offa *</p>
+                  <p class="ww">At the Commissioning of ICAN Offa</p>
                 </div>
               </div>
               <div class="col-md-3"></div>
@@ -540,9 +541,9 @@
                 <img src="./images/EkoHotel.jpg" class="push" alt="Office" />
                 <div class="info">
                   <p style="font-size: 13px; margin-top: 30px">
-                    * Dr Awa Ibraheem confered with merit award by ICAN's 54th
+                    Dr Awa Ibraheem confered with merit award by ICAN's 54th
                     president at the Annual Dinner and awards held at eko hotel
-                    and suites 2019 *
+                    and suites 2019
                   </p>
                 </div>
               </div>
@@ -556,8 +557,8 @@
                 <img src="./images/AlumniawardLag.jpg" alt="Office" />
                 <div class="info">
                   <p>
-                    * Dr awa ibraheem at the university of lagos alumni
-                    association award dinner on the 27th july,2012 *
+                    Dr awa ibraheem at the university of lagos alumni
+                    association award dinner on the 27th july,2012
                   </p>
                 </div>
               </div>
@@ -571,9 +572,9 @@
                 <img src="./images/Hajj.jpg" alt="Hajj" />
                 <div class="info">
                   <p>
-                    * As Kwara state 2022 Amirul Hajj with thr Kwara State
+                    As Kwara state 2022 Amirul Hajj with thr Kwara State
                     governor just before the 2022<br />
-                    last hajj flight took off for Madinah, Saudi Arabia. *
+                    last hajj flight took off for Madinah, Saudi Arabia.
                   </p>
                 </div>
               </div>
@@ -587,7 +588,7 @@
                 <img src="./images/Alhaji (4).jpg" alt="Office" />
                 <div class="info">
                   <p>
-                    <!-- * * -->
+                    <!--   -->
                   </p>
                 </div>
               </div>
@@ -605,7 +606,7 @@
                 />
                 <div class="info">
                   <p>
-                    <!-- * * -->
+                    <!--  * -->
                   </p>
                 </div>
               </div>
@@ -668,13 +669,26 @@
     <script src="script.js"></script>
     <script src="confetti.js"></script>
     <script type="text/javascript">
-      $(window).scroll(function () {
-        if (this.scrollY > 40) {
-          $(".scroll-down").addClass("show");
+      $(window).on("scroll", function () {
+        console.log(this.scrollY);
+        if (window.scrollY > 0) {
+          $(".scroll-down").addClass("disable");
         } else {
-          $(".scroll-down").removeClass("show");
+          $(".scroll-down").addClass("show");
+          $(".scroll-down").removeClass("disable");
         }
+      });
 
+      $(window).on("load", function () {
+        if (window.scrollY > 0) {
+          $(".scroll-down").addClass("disable");
+        } else {
+          $(".scroll-down").addClass("show");
+          $(".scroll-down").removeClass("disable");
+        }
+      });
+
+      $(window).scroll(function () {
         if (this.scrollY > 110) {
           $(".scroll-top").addClass("show");
         } else {
