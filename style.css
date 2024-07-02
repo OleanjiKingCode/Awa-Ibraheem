@@ -384,6 +384,7 @@ body {
   text-align: center;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .associations .header .top {
   display: flex;
@@ -642,6 +643,7 @@ body {
   display: flex;
   align-items: center;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .News .header .top {
   display: flex;
@@ -689,14 +691,14 @@ body {
   padding: 0px 20px;
 }
 .News .cards .newsCard .InnerCard {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: white;
   box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
-  border-radius: 15px;
+  border-radius: 12px;
   width: inherit;
   height: inherit;
 }
@@ -770,6 +772,7 @@ body {
   display: flex;
   align-items: center;
   z-index: 999;
+  cursor: pointer;
 }
 .partners .header .top {
   display: flex;
@@ -1208,6 +1211,7 @@ body {
   }
   .associations .header,
   .partners .header {
+    cursor: pointer;
     flex-direction: column;
     margin-bottom: 17px;
   }
