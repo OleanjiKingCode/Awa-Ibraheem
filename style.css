@@ -368,7 +368,7 @@ body {
   );
 }
 .associations {
-  height: 840px;
+  height: 1080px;
 }
 .associations .dot {
   width: 20px;
@@ -1207,7 +1207,7 @@ body {
   }
   .associations {
     margin-top: 440px;
-    height: 2600px;
+    height: 2800px;
   }
   .associations .header,
   .partners .header {
